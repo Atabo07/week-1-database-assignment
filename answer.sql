@@ -18,7 +18,7 @@ CREATE TABLE guests (
 -- Create Rooms table
 CREATE TABLE rooms (
     room_id INT AUTO_INCREMENT PRIMARY KEY,
-    room_number VARCHAR(10) NOT NULL,
+    room_number VARCHAR(10) NOT NULL UNIQUE,
     room_type VARCHAR(50) NOT NULL,
     price_per_night DECIMAL(10,2) NOT NULL,
     status VARCHAR(20) NOT NULL
